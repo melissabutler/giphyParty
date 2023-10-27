@@ -11,7 +11,7 @@ $('#search-btn').on('click', async function(event) {
     const searchTerm = $('#search').val();
     $('#search').val('');
 
-    const res = await axios.get("http://api.giphy.com/v1/gifs/search", {
+    const res = await axios.get("https://api.giphy.com/v1/gifs/search", {
         params: {
         q: searchTerm,
         api_key: "3IVHxnUtpxmyoVbjip6tBgK0JSvamc2b"
